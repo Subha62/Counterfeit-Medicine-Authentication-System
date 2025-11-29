@@ -1,62 +1,91 @@
-# Anti-Counterfeit Product Identification System Using Blockchain
+##🎯 Counterfeit Medicine Authentication System
+AI-Powered | Federated Learning | QR Verification | Secure Supply Chain
 
-The Anti-Counterfeit Product Identification System Using Blockchain is an innovative solution that uses blockchain technology to combat counterfeit products in various industries. It uses QR codes, smart contracts, and the Ethereum network to provide a secure and transparent platform for tracking and verifying product authenticity. The system is significant in addressing global supply chain issues by reducing the prevalence of counterfeit goods and enhancing transparency and trust. 
-
-## Live Demo
-Here is a live demo of the full functionality of the project 
-
-[![Product Live Demo](https://img.youtube.com/vi/aWkgaCfMEn8/0.jpg)](https://www.youtube.com/watch?v=aWkgaCfMEn8 "Product Walkthrough")
-
-Here is a blog plost of this project:
-https://medium.com/p/68d23c7bc41c
+This project provides a real-time medicine authentication system that uses Federated Learning, QR identity tokens, and role-based product lifecycle tracking to detect counterfeit medicines and secure the pharmaceutical supply chain.
 
 
-## Table of Contents
-- [Overview](#overview)
-- [Basic Walkthrough](#basic-walkthrough)
-- [Technologies Used](#technologies-used)
-- [Features](#features)
-- [Project Setup](#project-setup)
 
-## Overview
-The Anti-Counterfeit Product Identification System Using Blockchain is a groundbreaking solution designed to combat global supply chain issues related to counterfeit products. It leverages the unique capabilities of blockchain technology to provide a secure and transparent platform for tracking and verifying the authenticity of products across various industries.
+#📖 Overview
 
-The system uses QR codes, an overt technology that can be scanned by a smartphone app, to verify product information and origin. It employs smart contracts to store and execute product verification logic on the blockchain, ensuring tamper-proof data and trustless transactions. The Ethereum network serves as its decentralized database to store product information and status, accessible by authorized parties. A web interface, powered by React, allows users to interact with the system and view product information and history.
+Counterfeit medicines are a global threat, causing health hazards, financial loss, and supply chain corruption.
 
-The technologies used in this system include Solidity for smart contract development, Hardhat for Ethereum development environment, React for building the user interface, Node.js for backend development, and ethers.js for interacting with the Ethereum blockchain.
+This system solves the problem by combining:
 
-This system is significant in solving global supply chain issues as it provides a reliable method to verify the authenticity of products, thereby reducing the prevalence of counterfeit goods. It enhances transparency and trust among stakeholders in the supply chain, from manufacturers to consumers. 
+🧠 Federated Learning (FL):
+Learns from distributed devices without collecting raw images.
 
-## Basic Walkthrough
-- The `identeefi-backend-node` directory contains the codebase for the backend of the system.
-- The `identeefi-frontend-react` directory contains the codebase for the frontend of the system.
-- The `identeefi-postgres-database` directory contains the csv files for the backend database.
-- The `identeefi-smartcontract-solidity` directory contains the smart contract deployed to the Ethereum network.
+🔐 Secure QR Identity Tokens:
+Every medicine bottle/strip gets a unique QR token linked to FL predictions.
 
-## Technologies Used
-- Solidity
-- Hardhat
-- React
-- Node.js
-- ethers.js
+📍 Location & Metadata Tracking:
+Logs movement from Manufacturer → Supplier → Retailer → Customer.
 
-## Features
-- **QR Codes**: The system uses QR codes as an overt technology that can be scanned by a smartphone app to verify the product information and origin.
-- **Smart Contracts**: The system uses smart contracts to store and execute the product verification logic on the blockchain, ensuring tamper-proof data and trustless transactions.
-- **Ethereum Network**: The system uses the Ethereum network as its decentralized database to store the product information and status, which can be accessed by authorized parties.
-- **Web Interface**: The system uses a web interface powered by React to allow users to interact with the system and view the product information and history.
-
-## Project Setup
-To get started with this project, 
-1. Clone the repository.
-2. In `identeefi-postgres-database`, import the csv files to your own postgres database.
-3. In `identeefi-backend-node`, run `npm i` to install the dependencies and change the postgres credentials to your postgres crediantials and run `node postgres.js` to start the backend execution.
-4. In `identeefi-frontend-react`, run `npm i` to install the dependencies and run `npm start` to start localhost.
-5. You can inspect `identeefi-smartcontract-solidity` directory to view the smart contract details that is deployed to the Sepolia Testnet.
-6. To perform transactions, setup your Metamask wallet and connect your wallet to the Sepolia Tesnet Network and transact using SepoliaETH which can be obtained for free on Seplolia Faucet (https://sepoliafaucet.com/).
-
-For more information, you can view our user manual:
-[View User Manual](/user-manual.pdf)
+🎭 Role-Based Authentication:
+Different dashboards for Manufacturer, Supplier, Retailer, and Admin.
 
 
+
+
+#🚀 Key Features
+✔ Federated Learning (FL)
+
+No central dataset required
+
+Each manufacturer trains on its own data
+
+Only model weight updates are sent to server
+
+Enhances privacy & accuracy
+
+✔ QR-Based Medicine Verification
+
+Every product is assigned a unique QR token
+
+QR is scanned to verify:
+
+Authentic vs Counterfeit
+
+Origin information
+
+Expiry, batch, and metadata
+
+✔ Product Journey Tracking
+
+Tracks:
+
+Manufacturer identity
+
+Batch and serial number
+
+Sale state
+
+GPS-based movement logs
+
+Metadata per user role
+
+✔ Secure Authentication
+
+OTP email verification
+
+JWT-based login
+
+Role-based protected APIs
+
+
+##⚙️ Setup Instructions
+ # Backend setup for run the code 
+
+ cd "D:\Counterfit Medicine Authentication System\Counterfeit-Medicine-Identification-System-Using-Federated Learning"
+>> 
+PS D:\Counterfit Medicine Authentication System\Counterfeit-Medicine-Identification-System-Using-Federated Learning> cd mediauthnet-backend                                
+PS D:\Counterfit Medicine Authentication System\Counterfeit-Medicine-Identification-System-Using-Federated Learning\mediauthnet-backend>
+>> npm run dev
+
+# frontend setup for run the code 
+
+ cd "D:\Counterfit Medicine Authentication System\Counterfeit-Medicine-Identification-System-Using-Federated Learning"
+>> 
+PS D:\Counterfit Medicine Authentication System\Counterfeit-Medicine-Identification-System-Using-Federated Learning>  cd mediauthnet-frontend
+>> PS D:\Counterfit Medicine Authentication System\Counterfeit-Medicine-Identification-System-Using-Federated Learning\mediauthnet-frontend>
+>> npm start
 
