@@ -86,6 +86,6 @@ PS D:\Counterfit Medicine Authentication System\Counterfeit-Medicine-Identificat
  cd "D:\Counterfit Medicine Authentication System\Counterfeit-Medicine-Identification-System-Using-Federated Learning"
 >> 
 PS D:\Counterfit Medicine Authentication System\Counterfeit-Medicine-Identification-System-Using-Federated Learning>  cd mediauthnet-frontend
->> PS D:\Counterfit Medicine Authentication System\Counterfeit-Medicine-Identification-System-Using-Federated Learning\mediauthnet-frontend>
+PS D:\Counterfit Medicine Authentication System\Counterfeit-Medicine-Identification-System-Using-Federated Learning\mediauthnet-frontend>
 >> npm start
 
